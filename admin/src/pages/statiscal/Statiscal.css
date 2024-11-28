@@ -1,0 +1,58 @@
+.statiscal-report {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  width: 1200px; /* Tăng chiều ngang toàn bộ */
+  margin: 20px auto;
+  color: #333;
+}
+
+.report-left {
+  flex: 2;
+  margin-right: 30px;
+}
+
+.report-right {
+  flex: 3; /* Tăng kích thước phần chứa biểu đồ */
+  text-align: center;
+}
+
+.revenue-chart {
+  padding: 20px; /* Giữ padding hợp lý */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  width: 100%; /* Chiếm toàn bộ không gian của phần chứa */
+  height: 400px; /* Chiều cao ổn định */
+}
+
+.revenue-chart h4 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .statiscal-report {
+      flex-direction: column;
+  }
+
+  .report-left, .report-right {
+      flex: 1;
+      margin-right: 0;
+  }
+
+  .revenue-chart {
+      margin-top: 20px;
+      width: 100%; /* Biểu đồ vẫn chiếm hết chiều ngang */
+      height: 300px; /* Điều chỉnh chiều cao trên thiết bị nhỏ */
+  }
+}
